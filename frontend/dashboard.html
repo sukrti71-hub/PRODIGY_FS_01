@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkDashboard()">
+  <div class="dashboard">
+    <nav>
+      <h2>SecureAuth</h2>
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </nav>
+
+    <section class="hero">
+      <h1>Welcome to Dashboard 👋</h1>
+      <p>You have successfully logged into a protected route.</p>
+    </section>
+
+    <div class="grid">
+      <div class="dash-card">
+        <h3>Authentication</h3>
+        <p>JWT Enabled</p>
+      </div>
+
+      <div class="dash-card">
+        <h3>Password Security</h3>
+        <p>bcrypt Hashing</p>
+      </div>
+
+      <div class="dash-card">
+        <h3>Access Level</h3>
+        <p>Protected User</p>
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2>User Profile</h2>
+      <p id="userInfo">Loading user details...</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
